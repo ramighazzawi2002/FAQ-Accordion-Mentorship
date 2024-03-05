@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url('assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+@media only screen and (max-width: 375px) {
+    div.container{
+        margin-top: 30px !important;
+    }
+    div.container section{
+        width: 80%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(275, 100%, 97%);
+    font-family: 'WorkSans';
+}
+.header{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+section{
+    background-color: hsl(0, 0%, 100%);
+    z-index: 2;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+}
+section div:first-of-type{
+    display: flex;
+    align-items: center;
+}
+
+section div:first-of-type span{
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 20px;
+    letter-spacing: 3px;
+}
+
+section div:not(div:first-of-type){
+  position: relative;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+  padding: 20px;
+}
+
+section div p.question {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 30px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 87%;
+}
+section div p.question a{
+    text-decoration: none;
+    color: inherit;
+}
+section div p.hidden{
+    margin-top: 25px;
+    color: hsl(292, 16%, 49%);
+    line-height: 25px;
+    display: none;
+}
+
+section div svg.plus,svg.minus{
+    position: absolute;
+    top: 40px;
+    right: 5%;
+    cursor: pointer;
+}
+
+section div svg.minus{
+    display: none;
+}
+
+section div p.question:hover{
+    color: #AD28EB;
+}
