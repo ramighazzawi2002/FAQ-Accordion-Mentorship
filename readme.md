@@ -1,4 +1,3 @@
-```markdown
 # Frontend Mentor FAQ Accordion
 
 This project is a simple FAQ accordion page. It was coded for a challenge by Frontend Mentor.
@@ -73,4 +72,3 @@ Project is: _complete_
 
 ## Contact
 Coded by Rami Ghazzawi.
-```
