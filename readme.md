@@ -1,74 +1,52 @@
-# Frontend Mentor FAQ Accordion
+# Frontend Mentor - FAQ Accordion Card Solution
 
-This project is a simple FAQ accordion page. It was coded for a challenge by Frontend Mentor.
+This is a solution to the FAQ Accordion Card challenge on Frontend Mentor.
 
 ## Table of Contents
+- Overview
+- The challenge
+- Screenshot
+- Links
+- My process
+- Built with
+- What I learned
+- Continued development
+- Author
 
-- General Info
-- Technologies
-- Setup
-- Code Examples
-- Features
-- Status
-- Contact
+## Overview
 
-## General Info
+### The challenge
+Users should be able to:
+- View the optimal layout for the component depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Hide/Show the answer to a question when the question is clicked
 
-This project is a FAQ accordion page. The page displays a list of frequently asked questions. When a question is clicked, the answer to the question is displayed below it.
+### Screenshot
 
-## Technologies
+## Links
+- Solution URL: [https://github.com/ramighazzawi2002/FAQ-Accordion-Mentorship](https://github.com/ramighazzawi2002/FAQ-Accordion-Mentorship)
+- Live Site URL: [https://ramighazzawi2002.github.io/FAQ-Accordion-Mentorship/](https://ramighazzawi2002.github.io/FAQ-Accordion-Mentorship/)
 
-Project is created with:
-- HTML5
-- CSS3
+## My process
+
+### Built with
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
 - JavaScript
 
-## Setup
+### What I learned
+This challenge helped me practice and improve my skills in:
+- Responsive design using media queries
+- Implementing interactive elements with JavaScript
+- Using CSS custom properties for better code organization and maintainability
 
-To run this project, simply clone the repository and open the `index.html` file in a web browser.
+### Continued development
+I plan to continue developing my skills in:
+- Using advanced JavaScript techniques for more complex interactions
+- Implementing accessibility best practices
+- Learning and using CSS frameworks like Bootstrap or Tailwind CSS
 
-## Code Examples
-
-Here's a snippet from the JavaScript file that handles the accordion functionality:
-
-```javascript
-let plus = document.getElementsByClassName("plus");
-let minus = document.getElementsByClassName("minus");
-let question = document.querySelectorAll(".question a");
-let hidden = document.getElementsByClassName("hidden");
-
-for(let i = 0; i<plus.length; i++){
-    plus[i].onclick = () =>{
-        hidden[i].style.display = "block";
-        minus[i].style.display = "block";
-        plus[i].style.display = "none";
-    }
-    minus[i].onclick = () =>{
-        hidden[i].style.display = "none";
-        minus[i].style.display= "none";
-        plus[i].style.display = "block";
-    }
-    question[i].onclick = () =>{
-        if(plus[i].style.display == "block"){
-            hidden[i].style.display = "block";
-            minus[i].style.display = "block"
-            plus[i].style.display = "none"
-        }
-        else{
-            hidden[i].style.display = "none";
-            minus[i].style.display= "none";
-            plus[i].style.display = "block";
-        }
-    }
-}
-```
-
-## Features
-- Responsive design
-- FAQ accordion functionality
-
-## Status
-Project is: _complete_
-
-## Contact
-Coded by Rami Ghazzawi.
+## Author
+- Frontend Mentor - @ramighazzawi2002
+- Github - @ramighazzawi2002
